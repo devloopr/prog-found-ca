@@ -7,3 +7,15 @@ for (i = 15; i <= 25; i++) {
 }
 
 // question 2
+
+function robot() {
+  console.log("I am a function");
+}
+
+var innerFunction = robot();
+
+function outerFunction(human) {
+  outerFunction(human);
+}
+
+outerFunction(robot);
